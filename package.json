@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
-    "build-gulp": "gulp",
-    "test": "gulp archive && mocha --reporter spec --timeout 5000"
+    "build-gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
