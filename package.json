@@ -4,14 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d dist",
+    "build-gulp": "gulp",
+    "test": "gulp archive && mocha --reporter spec --timeout 5000"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@alrra/travis-scripts": "^2.1.0",
+    "apache-server-configs": "2.14.0",
     "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.2",
     "babel-preset-es2015": "^6.6.0",
-    "gulp": "^3.9.1"
+    "babel-register": "^6.7.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-util": "^3.0.7"
   },
   "babel": {
     "presets": [
